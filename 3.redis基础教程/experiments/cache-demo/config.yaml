@@ -1,0 +1,14 @@
+mysql:
+  host: localhost
+  port: 3306
+  user: root
+  password: web3ite.fun
+  database: cache_demo
+  max_open_conns: 10
+  max_idle_conns: 5
+
+redis:
+  host: localhost:6379
+  password: ""  # 如果本地Redis没有密码，留空；如果有密码，填写密码
+  type: node
+  ping_timeout: 10s
