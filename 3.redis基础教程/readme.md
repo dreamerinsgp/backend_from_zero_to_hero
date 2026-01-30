@@ -1,5 +1,5 @@
 # Redis学习路线图 - 基于DEX项目实战
-
+查看web3转行实战项目：https://web3ite.fun
 ## 项目Redis使用概览
 
 本项目使用了以下Redis核心功能：
