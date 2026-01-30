@@ -1,4 +1,5 @@
 # MySQL应用场景分析与学习路线图
+查看web3转行实战项目：https://web3ite.fun
 
 ## 一、项目MySQL应用场景分析
 
