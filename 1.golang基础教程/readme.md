@@ -5,6 +5,7 @@ golang基础概述：https://meeting.tencent.com/crm/lJPqWgZYc3
 # Golang语法分析及学习路线图
 
 > 基于 fun_dex_v2 项目的实际应用场景分析
+查看web3转行实战项目：https://web3ite.fun
 
 ## 目录
 
