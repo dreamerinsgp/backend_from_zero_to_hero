@@ -1,0 +1,57 @@
+{
+  "name": "@uniswap/v2-core",
+  "description": "🎛 Core contracts for the UniswapV2 protocol",
+  "version": "1.0.1",
+  "homepage": "https://uniswap.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Uniswap/uniswap-v2-core"
+  },
+  "keywords": [
+    "uniswap",
+    "ethereum",
+    "v2",
+    "core",
+    "uniswap-v2"
+  ],
+  "files": [
+    "contracts",
+    "build"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.2",
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^2.4.1",
+    "ethereumjs-util": "^6.2.0",
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "solc": "0.5.16",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "lint": "yarn prettier ./test/*.ts --check",
+    "lint:fix": "yarn prettier ./test/*.ts --write",
+    "clean": "rimraf ./build/",
+    "precompile": "yarn clean",
+    "compile": "waffle .waffle.json",
+    "pretest": "yarn compile",
+    "test": "mocha",
+    "deploy": "node scripts/deploy.js",
+    "deploy:tokens": "node scripts/deploy-test-tokens.js",
+    "createpair": "node scripts/create-pair.js",
+    "check:liquidity": "node scripts/check-pair-liquidity.js",
+    "add:liquidity": "node scripts/add-liquidity.js",
+    "swap": "node scripts/swap-exact-in.js",
+    "prepublishOnly": "yarn test"
+  },
+  "license": "GPL-3.0-or-later",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
