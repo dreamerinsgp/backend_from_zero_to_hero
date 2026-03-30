@@ -1,0 +1,12 @@
+#login scenarios: 
+- email: alice@test.com
+  password: secret123
+  expect_status: 200
+
+- email: bad@x.com
+  password: wrong
+  expect_status: 401
+
+- email: alice@test.com
+  password: wrong
+  expect_status: 401
